@@ -1,0 +1,98 @@
+:root {
+    --text-color: #333;
+    --brand-color: #135c10;
+    --bg-color: #fff;
+}
+
+/* GLOBAL STYLES */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-color);
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--text-color);
+    transition: background-color 0.5s ease, color 1s ease;
+}
+.dark-mode {
+    --brand-color: #4dd448;
+    --bg-color: #333;
+    --text-color: #fff;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* CONTAINER SYTLES */
+.container {
+    width: 100%;
+    max-width: 940px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.header {
+    padding: 30px 0px;
+}
+.site-header-container {
+    display: flex;
+    align-items: center;
+}
+.header-logo-link {
+    color: var(--brand-color);
+    font-weight: 700;
+    font-size: 26px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    margin-right: auto;
+}
+.button {
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.dark-btn {
+    margin-right: 10px;
+}
+.main {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    flex-grow: 1;
+}
+.img {
+    width: 940px;
+    height: 628px;
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.5)100%, rgba(0, 0, 0, 0.5)100%), url("../images/apple-company.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+}
+.main-list {
+    list-style: none;
+}
+.main-item:not(:last-child) {
+    margin-bottom: 30px;
+}
+.item-title {
+    color: var(--brand-color);
+    margin-bottom: 10px;
+}
